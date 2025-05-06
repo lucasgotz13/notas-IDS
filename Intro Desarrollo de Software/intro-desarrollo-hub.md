@@ -9,7 +9,7 @@ tags:
 # Introducción al desarrollo de software (hub)
 
 ## Clase 1: Introducción a Linux
-#### [Introducción a Linux](https://www.youtube.com/watch?v=BokUdKjt1ds)
+#### [[Introducción a linux]]
 ## Clase 2 - 4: Bash 
 #### [[Bash|bash]]
 

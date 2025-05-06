@@ -9,6 +9,7 @@ tags:
 # Bash
 
 ## ¿Qué es Bash?
+Bash (Bourne-again shell) es un **Intérprete de comandos** y un **lenguaje de scripting**
 - #### **Intérprete de comandos**
 	- Es un programa que lee y ejecuta comandos ingresados por el usuario
 	- Permite la **entrada de comandos**, **procesamiento de comandos**, **ejecución del comando** y **retorno de resultados**
@@ -16,9 +17,9 @@ tags:
 #### Stdin, stdout, stderror
 - stdin (Standard Input)
 	- Es el flujo a través del cual los comandos **reciben datos**
-	- El stdin en general proviene del reclado, pero podemos usar archivos o otros comandos para redirigir la entrada al stdin
+	- El stdin en general proviene del teclado, pero podemos usar archivos o otros comandos para redirigir la entrada al stdin.
 - stdout (Standard output)
-	- Es el flujo a través del cual loscomandos **envían datos** que se **muestran al usuario**
+	- Es el flujo a través del cual los comandos **envían datos** que se **muestran al usuario**
 	- Podemos redirigir el output usando '1>'. Ejemplo: cat archivo.txt 1> output.txt
 - stderror (Standard error)
 	- Es el flujo a través del cual los comandos **envían mensajes de error**
@@ -122,19 +123,34 @@ funcion_de_otro_archivo # Llamo a la función
 
 #bash
 #bash/que-es-bash
-¿Qué es Bash?::Es un intérprete de comandos y un lenguaje de scripting que lee y ejecuta órdenes ingresadas por el usuario.  
-¿Qué rol cumple stdin en Bash?::Es el flujo de entrada por el que los comandos reciben datos; por defecto proviene del teclado, pero puede redirigirse desde archivos o la salida de otros comandos. 
-¿Qué rol cumple stdout en Bash?::Es el flujo de salida estándar donde los comandos envían sus resultados; puede redirigirse a archivos usando `1>`.  
-¿Qué rol cumple stderr en Bash?::Es el flujo de error estándar donde los comandos envían mensajes de error; puede redirigirse a archivos usando `2>`.  
-#bash/comandos
-¿Cómo listamos archivos ocultos y con detalles en un directorio?::Con `ls -al` (o `ls -a -l`), donde `-a` muestra también los archivos ocultos y `-l` muestra permisos, propietario y grupo.  
-¿Cómo mostramos el contenido de un archivo y redirigimos la salida a otro?::Reescribir: `cat archivo.txt > salida.txt`  |  Añadir al final: `cat archivo.txt >> salida.txt`  
-¿Para qué sirve el comando wc y cuáles son sus flags más comunes?::Cuenta líneas, palabras o bytes de un archivo.  `wc -l` → líneas; `wc -w` → palabras  
-¿Cómo ver las primeras 10 líneas de un archivo? ¿Y las primeras 3?::Primeras 10 líneas: `head archivo.txt`  |  Primeras 3 líneas: `head -n 3 archivo.txt`  
-¿Cómo ver las últimas líneas de un archivo en tiempo real?::Con `tail -f archivo.txt`, que muestra las últimas líneas y observa nuevas adiciones.  
-¿Qué hace grep -i -r -v "patrón" .?::Busca recursivamente (`-r`) en el directorio actual líneas que no coinciden con “patrón” (`-v`), ignorando mayúsculas/minúsculas (`-i`).  
-¿Para qué sirve sed 's/viejo/nuevo/g' archivo?::Reemplaza todas (`g`) las ocurrencias de “viejo” por “nuevo” en la salida (sin modificar el archivo a menos que uses `-i`).
-¿Cómo inicia Bash una sesión y recibe tus comandos?::Al abrir una terminal, se inicia una sesión de Bash donde escribís comandos que el intérprete lee línea por línea (por ejemplo `ls` o `cd`).  
-¿Qué sucede durante el procesamiento de comandos en Bash?::Bash interpreta tu comando y lo traduce en acciones que el sistema operativo puede ejecutar (por ejemplo `mkdir nueva_carpeta` se convierte en “crear un directorio llamado nueva_carpeta”).  
-¿En qué consiste la ejecución de un comando en Bash?::Una vez interpretado, Bash envía la instrucción al sistema operativo para que la lleve a cabo; el SO realiza la acción solicitada.  
+¿Qué es Bash?::Es un intérprete de comandos y un lenguaje de scripting que lee y ejecuta órdenes ingresadas por el usuario.
+<!--SR:!2025-05-07,1,230-->
+¿Qué rol cumple stdin en Bash?::Es el flujo de entrada por el que los comandos reciben datos; por defecto proviene del teclado, pero puede redirigirse desde archivos o la salida de otros comandos.
+<!--SR:!2025-05-07,1,230-->
+¿Qué rol cumple stdout en Bash?::Es el flujo de salida estándar donde los comandos envían sus resultados; puede redirigirse a archivos usando `1>`.
+<!--SR:!2025-05-07,1,230-->
+¿Qué rol cumple stderr en Bash?::Es el flujo de error estándar donde los comandos envían mensajes de error; puede redirigirse a archivos usando `2>`.
+<!--SR:!2025-05-09,3,250-->
+¿En qué consiste la ejecución de un comando en Bash?::Una vez interpretado, Bash envía la instrucción al sistema operativo para que la lleve a cabo; el SO realiza la acción solicitada.
+<!--SR:!2025-05-07,1,224-->
 ¿Cómo devuelve Bash los resultados de la operación?::Tras la ejecución, Bash muestra el output en la terminal: si fue exitoso, verás el resultado esperado; si hubo errores, aparecerá un mensaje de error.
+<!--SR:!2025-05-08,2,244-->
+#bash/comandos
+¿Cómo listamos archivos ocultos y con detalles en un directorio?::Con `ls -al` (o `ls -a -l`), donde `-a` muestra también los archivos ocultos y `-l` muestra permisos, propietario y grupo.
+<!--SR:!2025-05-08,2,244-->
+¿Cómo mostramos el contenido de un archivo y redirigimos la salida a otro?::Reescribir: `cat archivo.txt > salida.txt`  |  Añadir al final: `cat archivo.txt >> salida.txt`
+<!--SR:!2025-05-08,2,244-->
+¿Para qué sirve el comando wc y cuáles son sus flags más comunes?::Cuenta líneas, palabras o bytes de un archivo.  `wc -l` → líneas; `wc -w` → palabras
+<!--SR:!2025-05-07,1,224-->
+¿Cómo ver las primeras 10 líneas de un archivo? ¿Y las primeras 3?::Primeras 10 líneas: `head archivo.txt`  |  Primeras 3 líneas: `head -n 3 archivo.txt`
+<!--SR:!2025-05-09,3,250-->
+¿Cómo ver las últimas líneas de un archivo en tiempo real?::Con `tail -f archivo.txt`, que muestra las últimas líneas y observa nuevas adiciones.
+<!--SR:!2025-05-07,1,224-->
+¿Qué hace grep -i -r -v "patrón" .?::Busca recursivamente (`-r`) en el directorio actual líneas que no coinciden con “patrón” (`-v`), ignorando mayúsculas/minúsculas (`-i`).
+<!--SR:!2025-05-07,1,224-->
+¿Para qué sirve sed 's/viejo/nuevo/g' archivo?::Reemplaza todas (`g`) las ocurrencias de “viejo” por “nuevo” en la salida (sin modificar el archivo a menos que uses `-i`).
+<!--SR:!2025-05-07,1,224-->
+¿Cómo inicia Bash una sesión y recibe tus comandos?::Al abrir una terminal, se inicia una sesión de Bash donde escribís comandos que el intérprete lee línea por línea (por ejemplo `ls` o `cd`).
+<!--SR:!2025-05-07,1,230-->
+¿Qué sucede durante el procesamiento de comandos en Bash?::Bash interpreta tu comando y lo traduce en acciones que el sistema operativo puede ejecutar (por ejemplo `mkdir nueva_carpeta` se convierte en “crear un directorio llamado nueva_carpeta”).
+<!--SR:!2025-05-07,1,224-->

@@ -18,9 +18,9 @@ tags:
 ## Clase 7 - 8: Git y GitHub
 #### [[Git y Github|git y github]]
 
-## Clase 9: Ingeniería de Software
+## Clase 9 - 10: Ingeniería de Software
 #### [[Ingenieria de software|Ingenieria de Software]]
-## Clase 11: Docker I
-#### [[Clase-docker|Docker 1]]
+## Clase 11 - 12: Docker
+#### [[Clase-docker|Docker]]
 ## Clase 13: SQL I
 #### [[Introduccion-sql|Introduccion SQL]]

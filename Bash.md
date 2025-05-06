@@ -121,10 +121,12 @@ funcion_de_otro_archivo # Llamo a la función
 ## Preguntas
 
 #bash
+#bash/que-es-bash
 ¿Qué es Bash?::Es un intérprete de comandos y un lenguaje de scripting que lee y ejecuta órdenes ingresadas por el usuario.  
 ¿Qué rol cumple stdin en Bash?::Es el flujo de entrada por el que los comandos reciben datos; por defecto proviene del teclado, pero puede redirigirse desde archivos o la salida de otros comandos. 
 ¿Qué rol cumple stdout en Bash?::Es el flujo de salida estándar donde los comandos envían sus resultados; puede redirigirse a archivos usando `1>`.  
 ¿Qué rol cumple stderr en Bash?::Es el flujo de error estándar donde los comandos envían mensajes de error; puede redirigirse a archivos usando `2>`.  
+#bash/comandos
 ¿Cómo listamos archivos ocultos y con detalles en un directorio?::Con `ls -al` (o `ls -a -l`), donde `-a` muestra también los archivos ocultos y `-l` muestra permisos, propietario y grupo.  
 ¿Cómo mostramos el contenido de un archivo y redirigimos la salida a otro?::Reescribir: `cat archivo.txt > salida.txt`  |  Añadir al final: `cat archivo.txt >> salida.txt`  
 ¿Para qué sirve el comando wc y cuáles son sus flags más comunes?::Cuenta líneas, palabras o bytes de un archivo.  `wc -l` → líneas; `wc -w` → palabras  

@@ -176,7 +176,23 @@ where t.id_ganador = p.id; -- Form simplificada del inner join
 ```
 
 ## Preguntas
-#sql
+#sql/teorico
+¿Qué nos permiten las Bases de Datos?::Nos permiten generar un almacenamiento organizado de información, facilitan la búsqueda, recuperación y gestión de datos y son muy útiles para aplicaciones web.
+¿Cuáles son las características de una Base de Datos?
+?
+- Base de datos: Contenedor de objetos (tablas, vistas, etc).
+- Motor de base de datos: Núcleo del sistema, encargado del almacenamiento y recuperación de datos. Ejemplos: PostgreSQL, MySQL, etc.
+- Gestor de Base de Datos: Software que interactúa con la base de datos. Ejemplos: DBeaver, pgAdmin, etc.
+
+¿Qué es SQL?::SQL (Structured Query Language) es el lenguaje estándar para gestionar bases de datos relacionales.
+¿Qué permite SQL?
+?
+Permite:
+- **Crear y modificar** bases de datos.
+- **Definir** estructuras de tablas.
+- **Insertar**, **modificar** y **eliminar** datos.
+- **Consultar información** de manera eficiente.
+
 
 #sql/comandos-basicos
 ¿Cómo se crea una base de datos?::create database base_de_datos;

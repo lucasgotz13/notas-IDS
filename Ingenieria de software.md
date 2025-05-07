@@ -67,9 +67,46 @@ tags:
 
 ## Preguntas
 #ingenieria-software
-¿Qué es Ingeniería de software?::Conjunto de conocimientos aplicados a un fin.  
+¿Qué es Ingeniería de software?::Conjunto de conocimientos aplicados en
+acciones (invencion, gestion, desarrollo) de áreas (maquinaria, equipos, sistemas) con un fin.  
+¿Qué es el software?::Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un sistema de computación.
+Tipos de software
+?
+- De sistemas
+- De aplicación
+- De ingeniería o ciencias.
+- Embebido.
+- IA
+
 ¿Qué características debe tener un buen software?::Debe cumplir, funcionar bien, ser mantenible, confiable (cumple lo que quiere el usuario), performante y seguro en su implementación.  
+¿Qué es la ingenieria de software?::Consiste en aplicarIngeniería al proceso completo de creación de software. Desde el momento en que surge la necesidad/problemática hasta el despliegue y mantenimiento la solución elaborada.
 ¿Cuáles son los pasos para realizar un software?::Entender el problema, diseñar la solución (considerando complejidad), asegurar alta calidad (0 fallos) y capacidad de mantenimiento.  
-¿Cuáles son las etapas del desarrollo de software?::Análisis de requerimientos, Diseño, Implementación, Testing y validación, Despliegue y Mantenimiento.  
+
+#ingenieria-software/etapas
+
+¿Cuáles son las etapas del desarrollo de software?
+?
+- Análisis de requerimientos
+- Diseño
+- Implementación
+- Testing y validación
+- Despliegue
+- Mantenimiento.  
+
 ¿Qué implica el análisis de requerimientos?::Construir la solución adecuada, entender el problema y definir el alcance (scope) en términos de tiempo y presupuesto.  
-¿Qué abarca la etapa de diseño?::Requerimientos funcionales (lo que debe hacer, ej. reproducir música en Spotify) y no funcionales (responsividad, uso de ORMs, codificación mantenible, documentación).
+¿Qué abarca la etapa de diseño?::Requerimientos funcionales (lo que debe hacer, ej. reproducir música en Spotify) y no funcionales (responsividad, uso de ORMs, codificación mantenible, documentación). En base a esto, escoger la **arquitectura de software** mas adecuada
+¿Qué abarca la etapa de implementación?::Involucra los pasos necesarios para **pasar de los requerimientos a un producto funcional.** Requiere un **proceso organizado**
+¿Qué abarca la etapa de Testing y Validación?
+?
+- Demostrar al cliente que el software cumple los requerimientos (validación).
+- Encontrar errores en el funcionamiento (verificación).
+- Inspirar cambios en los requerimientos.
+
+Tipos de test::Unitarios, de integración, UAT (User Acceptance Test), Pruebas de usabilidad
+¿Qué abarca el despliegue?::Desplegar el software en entornos como Development, QA, Preproducción y producción.
+¿Qué abarca el mantenimiento?
+?
+- Surgen nuevos requerimientos
+- Actualizaciones del software para mantener su utilidad
+- Cambios en el negocio
+- Errores no detectados.

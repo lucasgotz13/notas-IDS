@@ -97,6 +97,8 @@ services:
 
 ¿Qué es un Dockerfile?::Archivo que contiene instrucciones para crear una imagen Docker.
 
+Diferencia entre `RUN` y `CMD`:: `RUN` se corre cuando se construye la imagen, mientras que `CMD` se corre cuando se corre el contenedor
+
 ¿Qué hace el comando `docker build`?::Genera una imagen desde un Dockerfile en el directorio actual.
 
 ¿Qué es un contenedor en Docker?::Es una instancia en ejecución de una imagen.

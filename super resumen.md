@@ -141,3 +141,141 @@
 ¿Qué hace un `JOIN`?::Combina datos de dos o más tablas relacionadas
 
 ¿Qué función tiene `GROUP BY`?::Agrupa filas para aplicar funciones agregadas como `COUNT()`, `AVG()`, etc.
+
+#superquiz/supersuper
+### 🐚 **Bash**
+
+¿Qué es Bash?::Un lenguaje de programación y un lenguaje de scripting completo (.sh), y también una shell que interactúa con el usuario mediante comandos en la terminal.
+
+La shell es lo opuesto al kernel, ¿qué hace el kernel?::El kernel administra el software y trabaja internamente.
+
+¿Cuáles son los tres flujos principales en Bash?::standard in (0), standard out (1) y standard error (2).
+
+¿Qué comando se utiliza para pasar el contenido de 'archivo1' a 'archivo2', sobrescribiendo 'archivo2' si ya existe?::cat archivo1 > archivo2
+
+¿Cómo agregar contenido de 'archivo1' a 'archivo2' sin borrar lo existente?::cat archivo1 >> archivo2
+
+¿Qué hace el comando 'touch archivo.txt'?::Crea un archivo vacío llamado archivo.txt (o actualiza su timestamp si ya existe).
+
+¿Para qué sirve `mkdir`?::Para crear **directorios**.
+
+En Bash, ¿para qué sirve el símbolo `$`?::Para acceder al valor de las **variables de entorno**.
+
+¿Qué hace `cd $HOME`?::Te lleva al directorio **home** del usuario.
+
+¿Qué hace el pipe `|` en Bash?::Concatenar comandos, la salida estándar del primer comando se convierte en la entrada estándar del segundo.
+
+Ejemplo de uso de pipe con grep: ls -l | grep "txt"::Muestra las líneas del listado largo que contienen la cadena "txt".
+
+¿Qué significa `#!/bin/bash` al inicio de un script?::Indica al sistema operativo que el script debe ejecutarse usando Bash.
+
+¿Cómo hacer un script ejecutable?::Con el comando `chmod +x archivo.sh`.
+
+En un script de Bash, ¿qué significa `$1`?::Se refiere al **primer argumento** pasado al script.
+
+Sintaxis básica de un condicional `if` en Bash?
+?
+if [ condición ]; then 
+	código
+elif [ otra_condición ]; then 
+	código 
+else 
+	código 
+fi
+
+¿Qué hace `eq` en Bash?::Comparar si dos valores son **iguales**.
+
+¿Cómo declarar un arreglo en Bash?::mi_vector=("nombre1" "nombre2")
+
+¿Cómo acceder al primer elemento de un arreglo?::${mi_vector[0]}
+
+¿Cómo obtener todos los elementos de un arreglo?::${mi_vector[@]}
+
+¿Qué hace `ln -s archivo_original.txt enlace.txt`?::Crea un **enlace simbólico** llamado enlace.txt que apunta a archivo_original.txt.
+
+¿Qué hace `wc -l archivo.txt`?::Cuenta las **líneas** del archivo.
+
+---
+
+### 🧬 **Git**
+
+¿Qué es Git?::Un sistema de manejo de versiones.
+
+---
+
+### 🏗️ **Ingeniería de Software**
+
+¿Cuál es una característica clave de un buen software?::Que sea **mantenible** en el tiempo, evitando código ilegible o espagueti.
+
+¿Cuáles son las 5 etapas principales de la Ingeniería de Software?::
+
+1. Análisis de Requerimientos
+    
+2. Diseño
+    
+3. Implementación
+    
+4. Testing y validación
+    
+5. Despliegue (y Mantenimiento)
+    
+
+---
+
+### 🐳 **Docker**
+
+¿Qué es un proceso en un sistema operativo?::Todo lo que está corriendo en el sistema operativo, consumiendo recursos como CPU, GPU y memoria.
+
+¿Por qué Docker es una "máquina virtual minimalista"?::Porque corre sobre el sistema operativo anfitrión como un proceso más, permitiendo ejecutar aplicaciones aisladas (contenedores) con sus dependencias.
+
+¿Qué es una Imagen en Docker?::La definición de qué necesita un contenedor para correr.
+
+¿Qué es un Contenedor en Docker?::Una instancia en ejecución de una imagen.
+
+¿Qué es un Dockerfile?::Un archivo de texto estándar y declarativo que contiene instrucciones para construir una imagen Docker.
+
+¿Para qué sirven los volúmenes en Docker?::Para almacenar datos fuera de los contenedores, permitiendo la **persistencia de información**.
+
+¿Qué es Docker Compose?::Una herramienta que simplifica la gestión de aplicaciones Docker de **múltiples contenedores**, definiéndolos en un archivo YAML.
+
+Comando para mostrar las imágenes Docker descargadas::docker images
+
+Comando para mostrar los contenedores Docker activos::docker ps
+
+¿Cómo ver los logs de un contenedor en tiempo real?::docker logs -f <CONTAINER ID>
+
+¿Qué hace `docker exec -it <ID_contenedor> bash`?::Ejecuta **interactivamente bash dentro de un contenedor en ejecución**.
+
+¿Qué hace `FROM node:22-alpine` en un Dockerfile?::Especifica la **imagen base** sobre la cual se construirá la nueva imagen.
+
+¿Qué hace `WORKDIR /app` en un Dockerfile?::Define el **directorio de trabajo** dentro del contenedor para los comandos subsecuentes.
+
+¿Cuál es la diferencia entre RUN y CMD en un Dockerfile?::RUN ejecuta comandos al **construir** la imagen; CMD especifica el comando que se ejecutará cuando el contenedor **inicie**.
+
+¿Cómo construir una imagen llamada 'mi_app' desde un Dockerfile en el directorio actual?::docker build -t mi_app .
+
+¿Qué hace `docker stop $(docker ps -q)`?::Detiene **todos los contenedores en ejecución**.
+
+---
+
+### 🗃️ **SQL**
+
+¿Qué significa SQL?::Structured Query Language.
+
+¿Cómo crear una tabla 'clientes' con columnas id (INT), nombre (VARCHAR(50)) y apellido (VARCHAR(50))?::CREATE TABLE clientes (id INT, nombre VARCHAR(50), apellido VARCHAR(50));
+
+¿Cómo insertar un cliente en la tabla 'clientes' con id=1, nombre='Juan', apellido='Pérez'?::INSERT INTO clientes (id, nombre, apellido) VALUES (1, 'Juan', 'Pérez');
+
+¿Para qué sirve la cláusula WHERE?::Para **filtrar los resultados** según una condición.
+
+¿Qué es una PRIMARY KEY en SQL?::Un atributo que asegura valores **únicos** en una columna.
+
+¿Para qué se usa COUNT(*) en SQL?::Para **contar el número de filas** que cumplen una condición.
+
+¿Para qué sirve GROUP BY en SQL?::Para **agrupar filas** con los mismos valores en una o más columnas.
+
+¿Para qué sirve HAVING en SQL?::Para **filtrar los grupos** después de aplicar GROUP BY.
+
+¿Qué devuelve un INNER JOIN?::Solo las filas donde hay una **coincidencia en ambas tablas**.
+
+¿Qué devuelve un LEFT JOIN?::Todas las filas de la tabla de la **izquierda** y las coincidentes de la derecha; NULL si no hay coincidencia.

@@ -4,7 +4,7 @@ aliases:
   - fundamentos-hub
 tags: []
 ---
-
+#fundamentos 
 # Fundamentos de Programación (hub)
 
 ## Clase 1: Introducción a la materia

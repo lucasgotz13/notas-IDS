@@ -5,6 +5,7 @@ aliases:
 tags:
   - intro-desarrollo
 ---
+#intro-desarrollo 
 #### Fecha: 2025-04-8-mar
 #### Temas: Ingeniería-de-software, Etapas del desarrollo de software
 ### Definición: Conjunto de conocimientos aplicados a un fin
@@ -66,7 +67,6 @@ tags:
 - Aparecen bugs
 
 ## Preguntas
-#ingenieria-software
 ¿Qué es Ingeniería de software?::Conjunto de conocimientos aplicados en acciones (invencion, gestion, desarrollo) de áreas (maquinaria, equipos, sistemas) con un fin.  
 ¿Qué es el software?::Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un sistema de computación.
 Tipos de software
@@ -81,7 +81,6 @@ Tipos de software
 ¿Qué es la ingenieria de software?::Consiste en aplicarIngeniería al proceso completo de creación de software. Desde el momento en que surge la necesidad/problemática hasta el despliegue y mantenimiento la solución elaborada.
 ¿Cuáles son los pasos para realizar un software?::Entender el problema, diseñar la solución (considerando complejidad), asegurar alta calidad (0 fallos) y capacidad de mantenimiento.  
 
-#ingenieria-software/etapas
 
 ¿Cuáles son las etapas del desarrollo de software?
 ?

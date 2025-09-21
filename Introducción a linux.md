@@ -6,6 +6,7 @@ aliases:
 tags:
   - intro-desarrollo
 ---
+#intro-desarrollo 
 # Linux
 
 ## Descubriendo Linux
@@ -33,7 +34,6 @@ tags:
 - **Permisos y seguridad**: Controlan **quién puede acceder a qué archivos y recursos del sistema**, asegurando que solo las personas autorizadas puedan hacer ciertas cosas.
 - **POSIX**: Muchos sistemas _Unix-like_ siguen un estándar llamado POSIX, que significa **Portable Operating System Interface** (Interfaz de Sistema Operativo Portátil). Este estándar **define reglas y especificaciones sobre cómo deben comportarse los sistemas operativos para garantizar la compatibilidad entre ellos**. En otras palabras, POSIX asegura que los programas escritos para un sistema _Unix-like_ puedan ejecutarse también en otros sistemas similares que cumplan con este estándar.
 ## Preguntas
-#linux
 ¿Qué es Linux?::Es el **kernel** del sistema operativo. Aunque comúnmente se le llama “Linux”, el nombre correcto del sistema es **GNU/Linux**.
 
 ¿Qué es un sistema operativo basado en Unix?::Es un sistema que sigue ideas introducidas por UNIX, como la estructura de archivos jerárquica, multitarea, multiusuario, y comandos en terminal similares.

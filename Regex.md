@@ -5,6 +5,7 @@ aliases:
 tags:
   - intro-desarrollo
 ---
+#intro-desarrollo 
 # Regex
 
 - (expresion1|expresion2) -> Muestra las palabras que coincidan con la expresion1 O con la expresion2
@@ -34,7 +35,6 @@ tags:
 	- expresión+ -> coincide con 1 o más de con el tipo de expresión
 	- expresión? -> coincide con 0 o 1 de con el tipo de expresión
 ## Preguntas
-#regex
 ¿Qué hace la expresión `(expresion1|expresion2)` en regex?::Coincide con las palabras que coincidan con **expresion1 O expresion2**.
 
 ¿Qué significa el punto `.` en regex?::Es un **comodín** que matchea **cualquier carácter**.
@@ -45,7 +45,6 @@ tags:
 
 ¿Qué representan `a-z`, `A-Z` y `0-9` en regex?::Son **rangos** que coinciden con letras minúsculas, mayúsculas o números, comúnmente usados dentro de colecciones.
 
-#regex/tokens
 
 ¿Qué hace el token `\n` en regex?::Coincide con un **salto de línea**.
 
@@ -71,7 +70,6 @@ tags:
 
 ¿Qué hace la barra invertida `\` en regex?::Escapa un carácter para que sea **interpretado literalmente**.
 
-#regex/cuantificadores
 
 ¿Qué hace `{4}` como cuantificador?::Coincide con palabras de **exactamente 4 caracteres**.
 

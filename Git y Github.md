@@ -6,6 +6,7 @@ aliases:
 tags:
   - intro-desarrollo
 ---
+#intro-desarrollo 
 # Git
 
 ## ¿Qué es Git?
@@ -98,20 +99,15 @@ Herramienta para **registrar**, **rastrear** y **gestionar** tareas, errores o s
 Solicitud para **fusionar cambios** de una rama a otra en un repositorio remoto. Se usa para que otra persona verifique los cambios y, si es aprobado, los integren (en general a la rama principal / main).
 
 ## Flashcards
-#git
-#git/que-es-git
 ¿Qué es Git?::Git es un sistema de control de versiones distribuido que te permite gestionar y rastrear los cambios que realizas en tus archivos a lo largo del tiempo.  
 ¿Cuáles son las características principales de Git?::Distribuido, colaborativo, permite guardar el historial de versiones y permite ramificar el proyecto.  
 ¿Por qué usar Git?::Permite crear copias locales de un proyecto (clones), realizar seguimiento de cambios a nivel de archivo, facilitar la colaboración entre equipos y volver a versiones anteriores del código.  
-#git/estado-de-los-archivos
 ¿Qué significa que un archivo esté en estado Untracked en Git?::Significa que no está siendo rastreado por Git; son archivos no añadidos al seguimiento de Git. Para añadirlos, usar `git add 'archivo'`.  
 ¿Qué significa que un archivo esté en estado Unstaged en Git?::Son archivos seguidos por Git que han sido modificados pero no están preparados para el próximo commit. Para moverlos a staged, usar `git add 'archivo_modificado'`.  
 ¿Qué significa que un archivo esté en estado Staged en Git?::Son archivos modificados que están listos para ser confirmados en el próximo commit. Para confirmarlos, usar `git commit -m "mensaje de commit"`.  
 ¿Qué significa que un archivo esté en estado Committed en Git?::Son archivos que han sido confirmados y guardados de forma permanente en el historial de Git.  
-#git/repositorios
 ¿Para qué sirve el comando git init?::Inicializar un repositorio y empezar a rastrear los archivos del directorio con Git.  
 ¿Para qué sirve el comando git clone?::Clonar un repositorio remoto creando una copia local en tu máquina.  
-#git/comandos
 ¿Qué muestra git status?::El estado actual del repositorio, indicando archivos no confirmados (unstaged), preparados (staged) y confirmados (committed).  
 ¿Qué muestra git diff?::Las diferencias entre los cambios del último commit y los cambios actuales no confirmados por el usuario.  
 ¿Para qué sirve git stash?::Poner tus cambios en una lista de espera para cambiar de rama sin perderlos; `git stash pop` devuelve los cambios, y `git stash list` muestra lo stasheado.  
@@ -127,12 +123,10 @@ Solicitud para **fusionar cambios** de una rama a otra en un repositorio remoto.
 ¿Para qué sirve git reset <archivo>?::Quitar un archivo del área de preparación; `--hard` revierte todo el repositorio al último commit; `git checkout -- <archivo>` deshace cambios en un archivo no añadido aún al staging.  
 #git/buenas-practicas
 ¿Cuáles son las buenas prácticas en Git?::Crear siempre una rama nueva para trabajar, realizar commits por funcionalidad, nombrar ramas acorde a la funcionalidad y asegurar que la rama main (o master) siempre funcione.  
-#git/ramas
 ¿Qué son las ramas?::Una bifurcación del proyecto que permite avanzar en paralelo sin modificar lo que ya está hecho.
 ¿Cuales son las estrategias ideales a la hora de usar ramas?
 ?
 - Main, develop, feature
 - Gitflow (main, develop, release, hotfix, feature)
-#git/github
 ¿Qué son los Issues en GitHub?::Herramienta para registrar, rastrear y gestionar tareas, errores o solicitudes de nuevas funcionalidades en un proyecto; se resuelven mediante pull requests.  
 ¿Qué son los Pull Requests en GitHub?::Solicitudes para fusionar cambios de una rama a otra en un repositorio remoto; sirven para que otros revisen y aprueben los cambios antes de integrarlos en la rama principal.

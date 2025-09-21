@@ -5,7 +5,7 @@ aliases:
 tags:
   - intro-desarrollo
 ---
-
+#intro-desarrollo 
 # Docker
 ### ¿Para qué Docker?
 Permite correr tu aplicación siempre **en un mismo entorno**
@@ -87,8 +87,6 @@ services:
 - `docker compose down` -> **Para todos los contenedores y borra la red** (no borra volumenes)
 
 ## Preguntas
-#docker
-#docker/teorico
 ¿Para qué sirve Docker?::Para correr tu aplicación siempre en un mismo entorno.
 
 ¿Qué contiene una imagen de Docker?::Un sistema operativo, el software necesario y la aplicación (código).
@@ -114,7 +112,6 @@ Diferencia entre `RUN` y `CMD`:: `RUN` se corre cuando se construye la imagen, m
 ¿Qué comando corre un contenedor desde una imagen?::`docker run 'nombre-contenedor'`.
 
 ¿Qué hace el comando `docker run -dp port:port 'contenedor'`?::Corre un contenedor en segundo plano y mapea puertos (`-d`: detached, `-p`: puerto).
-#docker/comandos
 ¿Para qué sirve `docker pull`?::Descargar una imagen desde Docker Hub.
 
 ¿Para qué sirve `docker images`?::Listar las imágenes descargadas o creadas localmente.

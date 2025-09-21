@@ -5,7 +5,7 @@ aliases:
 tags:
   - intro-desarrollo
 ---
-
+#intro-desarrollo 
 # Introduccion SQL
 
 ## ¿Qué son las Bases de Datos?
@@ -176,7 +176,6 @@ where t.id_ganador = p.id; -- Form simplificada del inner join
 ```
 
 ## Preguntas
-#sql/teorico
 ¿Qué nos permiten las Bases de Datos?::Nos permiten generar un almacenamiento organizado de información, facilitan la búsqueda, recuperación y gestión de datos y son muy útiles para aplicaciones web.
 ¿Cuáles son las características de una Base de Datos?
 ?
@@ -194,7 +193,6 @@ Permite:
 - **Consultar información** de manera eficiente.
 
 
-#sql/comandos-basicos
 ¿Cómo se crea una base de datos?::create database base_de_datos;
 ¿Cómo se borra una base de datos?::drop database base_de_datos;
 ¿Cómo se crea una tabla?::create table usuarios(id INT, nombre VARCHAR(50), apellido VARCHAR(50));
@@ -203,7 +201,6 @@ Permite:
 ¿Cómo se eliminan registros de una tabla?::`delete from usuarios where id = 1`;
 ¿Cómo se modifican registros de una tabla?::`update usuarios set apellido = 'García' where id = 1;`
 
-#sql/funciones
 
 ¿Qué hace la función 'order by' y 'limit'?
 ?

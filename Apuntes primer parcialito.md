@@ -162,7 +162,7 @@ Para comprender la complejidad del algoritmo, plantemos la ecuación de recurren
 
 ## T(N) = O(d * (n + k))
 
-- d: La cantidad de digitos
+- d: La cantidad de llamados al ordenamiento auxiliar
 - n: Cantidad de elementos
 - k: Rango
 En este caso, como el rango de los capitulos, las temporadas y los nombres es diferente, debemos determinar lo siguiente:

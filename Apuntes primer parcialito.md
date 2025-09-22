@@ -132,6 +132,43 @@ Teniendo la ecuacion:
 - B: Proporción del tamaño original con el que llamamos recursivamente
 - C: (Todo lo que no son llamados recursivos)
 
-#### Si $\log_b(a) = C$ -->  $T(n) =  O(n^c\log(n))$
-#### Si $\log_b(a) < C$ -->  $T(n) =  O(n^c)$
-#### Si $\log_b(a) > C$ -->  $T(n) =  o\!\left(n^{\log_b(a)}\right)$
+Si $\log_b(a) = C$ -->  $T(n) =  O(n^c\log(n))$
+Si $\log_b(a) < C$ -->  $T(n) =  O(n^c)$
+Si $\log_b(a) > C$ -->  $T(n) =  o\!\left(n^{\log_b(a)}\right)$
+
+## Ejercicio 3 primer recuperatiorio
+
+El ejercicio nos propone utilizar RadixSort para ordenar los capítulos de unas series. Se quiere que quede ordenado primero por nombre de la serie, luego por temporada y por ultimo número de capitulo.
+
+Para lograr esto, en el código debemos ordenar el arreglo primero por número de capitulo, luego ordenar el resultado por temporada, y por ultimo ordenar el resultado de este por nombre de la serie, en base a como debe funcionar RadixSort. 
+Esto requiere un algoritmo de ordenamiento auxiliar. Para este caso, considero que el más adecuado es Counting Sort, ya que los 3 datos por el cual vamos a ordenar tienen tanto un rango acotado y conocido, como también son discretizables.
+
+Primero ordenaremos el arreglo de capitulos por el número de capitulo. Para esto, debemos considerar el rango entre el capítulo con el número menor y el capítulo con el número mayor. Entonces, podemos determinar que el rango va a ser entre 1 y 9, es decir, un rango de 9.
+
+Con esto, podemos armar el arreglo de frecuencias:
+num de capitulo: [1 2 3 4 5 6 7 8 9]
+frecuencia:            [3 1 1 0 1 0 0 1 1]
+
+Luego de armar este arreglo, podemos proceder a armar el arreglo de los inicios de cada capitulo. Para determinar esto, debemos sumar la posicion del anterior inicio con la frecuencia del anterior elemento. (Por ejemplo, para determinar la posicion del 2, debemos sumar la posicion inicial del 1 (0) + su frecuencia (3) )
+
+nums:  [1 2 3 4 5 6 7 8 9]
+inicios: [0 3 4 4 5 5 5 6 7]
+
+Por ultimo, armamos el arreglo ya ordenado. Para esto, recorremos el arreglo y vamos posicionando los valores en base a el valor de sus inicios. Por ejemplo, el capitulo 1 lo debemos posicionar en la posicion 0, ya que es donde se nos indica que inicia. Luego de esto, debemos sumar +1 al valor del inicio, asi si existe otro 1 no se sobreponga con el ya posicionado.
+
+Este procedimiento hay que repetirlo dos veces mas, primero con el num de temporada y luego con el nombre de la serie (en este orden estrictamente)
+
+Para comprender la complejidad del algoritmo, plantemos la ecuación de recurrencia:
+
+## T(N) = O(d * (n + k))
+
+- d: La cantidad de digitos
+- n: Cantidad de elementos
+- k: Rango
+En este caso, como el rango de los capitulos, las temporadas y los nombres es diferente, debemos determinar lo siguiente:
+- Capitulos: O(1*(n + 9))
+- Temporada: O(1*(n + 3))
+- Nombres: O(2*(n + 4))
+Por lo tanto: T(N) = O(n+9) + O(n + 3) + O(n + 4)
+En el caso que n sea muchisimo mas grande que sus respectivos k, el k se vuelve despreciable, por lo cual:
+## T(N) = O(N)

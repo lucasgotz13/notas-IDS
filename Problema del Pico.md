@@ -1,3 +1,4 @@
+#algo2 
 ![[Pasted image 20250908194109.png]]
 
 Se tiene un arreglo de N>=3N>=3 elementos en forma de pico, esto es: estrictamente creciente hasta una determinada posición pp, y estrictamente decreciente a partir de ella (con 0<p<N−10<p<N−1). Por ejemplo, en el arreglo `[1, 2, 3, 1, 0, -2]` la posición del pico es p=2p=2. Se pide:

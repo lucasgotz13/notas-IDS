@@ -20,3 +20,17 @@
 
 ## Clase 9
 #### [[Iteradores Externos e Internos]]
+
+## Clase 11
+#### [[Hash - Iteradores]]
+
+## AVL 
+
+#### [[AVL]]
+
+## Grafos
+
+#### [[Grafos]]
+
+## Caminos Minmos
+#### [[Caminos Minimos]]

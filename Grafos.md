@@ -30,5 +30,6 @@ D: {}
 | Matriz adyacencia |  O(V²)   |      O(V) (redim)      |      O(1)      |      O(1)      |     O(1)      |     O(1)     |
 | Lista adyacencia  | O(V + E) | - OLL (V)<br>- ODL (1) |      O(V)      |      O(V)      |   O(V + E)    |     O(V)     |
 | LA: dict de dict  |  O(V+E)  |          O(1)          |      O(1)      |      O(1)      |     O(V)      |     O(1)     |
+
 *OLL: Lista de lista*
 *ODL: Diccionario de lista*

@@ -1,5 +1,0 @@
----
-id: 
-aliases: 
-tags:
----

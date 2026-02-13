@@ -1,0 +1,2 @@
+
+La dirección de memoria identifica una celda de memoria en la que se almacena información (se puede pensar como una dirección postal en la cual una persona recibe o envía correos). Durante una operación de lectura o escritura, el bus de direcciones contiene la dirección a la cuál debe leerse o escribirse el dato. Luego, el bus de datos contiene el dato a leerse o escribirse por el CPU

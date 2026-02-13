@@ -1,0 +1,5 @@
+- Forma una estructura de datos organizada tipo tabla
+- Cada renglón de la tabla es identificado por su "dirección"
+- Cada dato es agrupado físicamente de a 8 bits. No puedo leer ni escribir de RAM un número de bits menor a 8.
+- Los procesadores en general tienen instrucciones para acceder simultáneamente 1, 2, 4 o más bytes (palabras)
+- Palabras de más de 8 bits son guardadas como una serie de bytes

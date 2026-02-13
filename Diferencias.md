@@ -1,0 +1,6 @@
+- Ahorro de instrucciones redundantes.
+- Dispositivos mapeados en memoria o en un mapa independiente.
+- Código de máquina de tamaño fijo o depende de cada instrucción.
+- Ciclos de reloj para completar una instrucción.
+- Accesos a memoria en lectura/escritura o como argumento de operaciones.
+- Cantidad de registros disponibles

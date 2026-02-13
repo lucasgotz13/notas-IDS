@@ -1,0 +1,1 @@
+El ensamblado es definido como la **traducción** del programa escrito en **lenguaje ensamblador** a un lenguaje funcionalmente equivalente a **lenguaje de máquina**.

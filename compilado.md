@@ -1,0 +1,1 @@
+La compilación es definida como el **proceso de traducción** de un programa escrito en **lenguaje de alto nivel** a un lenguaje funcionalmente equivalente a un **lenguaje ensamblador**.

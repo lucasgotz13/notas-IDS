@@ -1,2 +1,2 @@
 0: stdin
-1: 
+1: stdout

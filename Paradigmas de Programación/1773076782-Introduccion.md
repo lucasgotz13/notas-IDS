@@ -97,7 +97,31 @@ Estos diagramas nos permiten visualizar rápidamente como es el diseño del sist
 ### Relaciones entre clases
 
 ![[Pasted image 20260309163444.png]]
+
+> [!Introduccion] Observación
+> Diferencia entre agregación y composición: En composición, si yo destruyo el referenciador se tiene que destruir el referenciado, mientras que en agregación no.
+
 ### Diagrama de secuencia
 
 ![[Pasted image 20260309164647.png]]
 Muestra los actores del sistema, una linea de tiempo, los mensajes que se van mandando unos objetos a otros.
+
+## Tipos de datos
+
+**Dos categorías**:
+- **Primitivos**: int, double, boolean, char, etc. (valor por defecto: 0)
+	- No son objetos
+- **Referencias**: Apuntan a un objeto en memoria (ej: Punto, valor por defecto: null)
+	- Los objetos se manejan por referencia.
+**Arreglos**:
+- Declaración: `int[] numeros;`
+- Inicialización: `numeros = new int[10]; int[] numeros = {1,2,3}`
+- Acceso: `numeros[0]` `numeros.length`
+- El tamaño de un arreglo es fijo una vez creado.
+**Strings**:
+- Son instancias de la clase `String`
+- `"...` es azúcar sintáctica para new String(...)
+- Inmutables
+**Colecciones dinámicas**:
+- Clases disponibles en la biblioteca estándar
+- ArrayList, HashSet, HashMap, etc.

@@ -8,4 +8,5 @@ tags:
 
 # paradigmas-hub
 
-## [[1773076782-Introduccion|Introduccion]]
+## [[1773076782-Introduccion|Introducción]]
+## [[1773681613-abstraccion-encapsulamiento-herencia-y-polimorfismo|Abstracción, encapsulamiento, herencia y polimorfismo]]

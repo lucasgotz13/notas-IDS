@@ -8,4 +8,8 @@ tags:
 
 # sistemas-hub
 
+## [[1773527553-sistema-operativo|Sistema Operativo]]
+
 ## [[1773461753-lab-fork|lab fork]]
+
+## [[1773863786-kernel|Kernel]]

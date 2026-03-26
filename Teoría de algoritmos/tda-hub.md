@@ -11,3 +11,5 @@ aliases:
 ## [[1773698555-algoritmos-greedy-1|Algoritmos Greedy 1]]
 
 ## [[1773957657-algoritmos-greedy-2|Algoritmos Greedy 2]]
+
+## [[1774562671-fuerza-bruta-y-backtracking|Fuerza Bruta y Backtracking]]

@@ -34,9 +34,8 @@ Un algoritmo es greedy cuando tenemos dicha regla sencilla que sólo mira el est
   - La regla _greedy_ es que la siguiente arista que yo voy a ver es la mas pequeña a la cuál puedo considerar o no (que no genere ciclo).
   - El óptimo local es que el MST hasta cierta iteración agrega un vértice nuevo tal que sea la minima arista.
 - Kruskal
-
-> [!TODO] TODO
-> Ver de vuelta el algoritmo greedy de Kruskal
+  - La regla _greedy_ es que agrego la arista mas pequeña que no me genere ningun ciclo en general
+  - El optimo local es similar a Prim.
 
 ## Problema de Scheduling
 
@@ -75,14 +74,12 @@ Regla: Agarro los 2 caracteres menos frecuentes y los vuelvo mas grandes.
 
 Se tiene un sistema monetario (ejemplo, el nuestro). Se quiere dar "cambio" de una determinada cantidad de plata. Implementar un algoritmo que devuelva el cambio pedido, usando la mínima cantidad de moneda/billetes.
 
-Si tuvieramos n precio y c cantidad de monedas, la solución cuesta O(c) (no involucra n).
+Si tuvieramos $n$ precio y $c$ cantidad de monedas, la solución cuesta $O(c)$ (no involucra $n$).
 
 ¿Y si el sistema monetario fuera [1, 5, 6, 9] y quisiéramos cambio de 11?
 
 ¿Por qué falla?
-
-> [!TODO] TODO
-> Revisar este problema
+Porque al ser greedy, el algoritmo agarra primero la moneda mas grande, en vez de pensar si la combinacion de otros numeros quizas da mejor.
 
 ## Problema de compras con inflación
 

@@ -327,7 +327,7 @@ Cuando hablamos de compiladores, hay distintos tipos:
 Escribimos un código fuente, donde se leen **datos de entrada**. A partir de este, hay una salida del proceso donde esa salida genera el código de assembler.
 ![[Pasted image 20260211224846.png]]
 - Análisis léxico: Distinguir palabras clave del lenguaje e identificadores. Crea la tabla de símbolos.
-- Análisis sintáctico: Detecta la estructura comparándolas con las permitidas por el lenguaje.
+- Análisis sintáctico: Detecta la estructura comparándolas con las permitidas por el lenguaje. Construye un árbol de sintaxis abstracta (AST).
 - Análisis semántico: Asociar a cada variable, tipo, ámbito, una congruencia de tipo en expresiones.
 - Mapeo de acciones: Asociar código assembler a cada sentencia del programa.
   Se traduce una linea de alto nivel a lineas de ensamble. Los tipos de instrucciones que se traducen son:

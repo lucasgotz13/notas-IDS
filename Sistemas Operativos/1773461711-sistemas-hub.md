@@ -15,3 +15,7 @@ tags:
 ## [[1773863786-kernel|Kernel]]
 
 ## [[1774474809-de-programa-a-proceso|De programa a proceso]]
+
+## [[1775078352-scheduler-1|Scheduling]]
+
+## [[1775683259-scheduling-2|Scheduling 2]]

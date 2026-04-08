@@ -8,6 +8,16 @@ tags:
 
 # Fuerza Bruta y Backtracking
 
+- [[#Fuerza Bruta|Fuerza Bruta]]
+- [[#Backtracking|Backtracking]]
+	- [[#Backtracking#Ejemplo 1 - N reinas|Ejemplo 1 - N reinas]]
+	- [[#Backtracking#Ejemplo 2 - Independent Set|Ejemplo 2 - Independent Set]]
+		- [[#Ejemplo 2 - Independent Set#Código (por Fuerza Bruta)|Código (por Fuerza Bruta)]]
+		- [[#Ejemplo 2 - Independent Set#Código (por Backtracking)|Código (por Backtracking)]]
+		- [[#Ejemplo 2 - Independent Set#Complejidad|Complejidad]]
+	- [[#Backtracking#Ejemplo 2b - variante|Ejemplo 2b - variante]]
+	- [[#Backtracking#Ejemplo 3 - Camino Hamiltoniano|Ejemplo 3 - Camino Hamiltoniano]]
+
 ## Fuerza Bruta
 Tenemos un problema combinatorio => Probamos todas las soluciones
 Ejemplo: Ordenar => O(n!)

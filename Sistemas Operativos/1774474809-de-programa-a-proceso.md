@@ -8,6 +8,24 @@ tags:
 
 # De programa a proceso
 
+- [[#El programa|El programa]]
+	- [[#El programa#Compilación|Compilación]]
+		- [[#Compilación#Fase 1 - El Preprocesador (cpp)|Fase 1 - El Preprocesador (cpp)]]
+		- [[#Compilación#Fase 2 - El Compilador (cc1)|Fase 2 - El Compilador (cc1)]]
+		- [[#Compilación#Fase 3 - El Ensamblador (as)|Fase 3 - El Ensamblador (as)]]
+		- [[#Compilación#Fase 4 - El Enlazador (ld)|Fase 4 - El Enlazador (ld)]]
+	- [[#El programa#Formato ejecutable|Formato ejecutable]]
+- [[#OpenSBI|OpenSBI]]
+- [[#Proceso|Proceso]]
+	- [[#Proceso#Virtualización de memoria|Virtualización de memoria]]
+	- [[#Proceso#El proceso en memoria|El proceso en memoria]]
+		- [[#El proceso en memoria#Virtualización de Memoria|Virtualización de Memoria]]
+		- [[#El proceso en memoria#Traducción de Direcciones|Traducción de Direcciones]]
+	- [[#Proceso#brk() vs malloc()|brk() vs malloc()]]
+	- [[#Proceso#Virtualización del procesador|Virtualización del procesador]]
+	- [[#Proceso#Estados de un proceso|Estados de un proceso]]
+	- [[#Proceso#El Contexto|El Contexto]]
+
 ## El programa
 
 ### Compilación

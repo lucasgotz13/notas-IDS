@@ -14,3 +14,5 @@ tags:
 ## [[1774890197-principios-de-diseo|Principios de diseño]]
 
 ## [[1775495090-programacion-orientada-a-eventos|Programación orientada a Eventos]]
+
+## [[1776099844-interfaces-graficas|Interfaces Graficas]]

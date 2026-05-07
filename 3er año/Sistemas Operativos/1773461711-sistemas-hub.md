@@ -19,3 +19,8 @@ tags:
 ## [[1775078352-scheduler-1|Scheduling]]
 
 ## [[1775683259-scheduling-2|Scheduling 2]]
+
+## [[1777818648-memoria-ii|Memoria II]]
+
+## [[1778070225-file-system|File System]]
+## [[1778102107-file-system-ii|File System II]]

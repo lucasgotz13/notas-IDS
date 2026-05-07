@@ -15,3 +15,9 @@ aliases:
 ## [[1774562671-fuerza-bruta-y-backtracking|Fuerza Bruta y Backtracking]]
 
 ## [[1775772936-programacion-dinamica-1|Programación Dinámica 1]]
+
+## [[1776377652-programacion-dinamica-3|Programacion Dinamica 3]]
+
+## [[1777586682-programacion-lineal|Programacion Lineal]]
+
+## [[1778178854-programacion-lineal-ii|Programacion Lineal II]]

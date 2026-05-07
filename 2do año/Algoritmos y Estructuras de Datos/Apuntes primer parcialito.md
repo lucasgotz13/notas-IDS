@@ -153,7 +153,8 @@ const (
 ## Teorema maestro
 
 Teniendo la ecuacion:
-#### $T(n) = A \, T\!\left(\tfrac{n}{B}\right) + O(n^c)$
+
+ $T(n) = A \, T\!\left(\tfrac{n}{B}\right) + O(n^c)$
 
 - A: Cantidad de llamados recursivos
 - B: Proporción del tamaño original con el que llamamos recursivamente

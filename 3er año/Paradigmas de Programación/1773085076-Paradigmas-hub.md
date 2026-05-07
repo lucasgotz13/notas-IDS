@@ -15,4 +15,7 @@ tags:
 
 ## [[1775495090-programacion-orientada-a-eventos|Programación orientada a Eventos]]
 
-## [[1776099844-interfaces-graficas|Interfaces Graficas]]
+## [[1776099844-interfaces-graficas|Interfaces Gráficas]]
+
+## [[1778091311-programacion-logica|Programación Lógica]]
+

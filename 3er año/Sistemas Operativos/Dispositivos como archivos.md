@@ -1,0 +1,1 @@
+Todo es un archivo en UNIX --> Esto permite un acceso uniforme a los datos de los dispositivos y un manejo de permisos unificados.

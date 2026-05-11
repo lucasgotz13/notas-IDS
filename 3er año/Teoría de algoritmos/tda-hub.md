@@ -21,3 +21,5 @@ aliases:
 ## [[1777586682-programacion-lineal|Programacion Lineal]]
 
 ## [[1778178854-programacion-lineal-ii|Programacion Lineal II]]
+
+## [[1778191360-redes-de-flujo-y-algoritmo-de-ford-fulkerson|Redes de Flujo y Algoritmo de Ford-Fulkerson]]

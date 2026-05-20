@@ -54,18 +54,16 @@ El archivo .o resultante **tiene estructura ELF**, pero no es ejecutable todaví
 El enlazador toma todos los .o y los combina en un único ejecutable ELF final.
 Tareas:
 - **Resolución de símbolos**: El linker encuentra la definición de un símbolo y "conecta" la referencia. Si no la encuentra, tira un error de "undefined reference".
-- **Reubicación (relocation)**: 
-
-
-> [!TODO] Completar enlazador
-
+- **Reubicación (relocation)**: Asigna direcciones de memoria definitivas a cada sección y actualiza todas las referencias. ¿El ensamblador dejó entradas pendientes? El linker las resuelve ahora
+- **Organización según el linker script**: En desarrollo de sistemas operativos esto es fundamental. El script de enlazador (.ld) le dice al linker exactamente cómo organizar el binario en memoria.
+- Generación de ELF final: El output es un ELF completamente especificado, con todas las direcciones resueltas y la tabla de segmentos lista para ser interpretada por quien cargue el binario.
 ### Formato ejecutable
 Un **programa** es un archivo que posee toda la información de como construir un proceso en memoria
 - **Instrucciones de Lenguaje de Máquina**: Almacena el código del programa.
 - **Dirección del Punto de Entrada del Programa**: Identifica la dirección de la instrucción con la cual la ejecución del programa debe iniciar.
 - **Datos**: El programa contiene valores de los datos con los cuales se deben inicializar las variables.
-- **Símbolos y Tablas de Realocación**.
-- **Bibliotecas compartidas o Dinámicas**.
+- **Símbolos y Tablas de Realocación**: Describe la ubicación y los nombres de las funciones y variables de todo el programa, así como otra información que es utilizada por ejemplo para debug.
+- **Bibliotecas compartidas o Dinámicas**: El programa contiene además otra información necesaria para terminar de construir el proceso en memoria.
 
 Un archivo ELF es una secuencia de bytes con una organización muy precisa.
 
@@ -120,6 +118,8 @@ Se traduce una Dirección Virtual en una Dirección Física. Este mapeo se reali
 ### brk() vs malloc()
 - brk()
 	- Syscall. Opera con bloques grandes
+	- El break del programa inicialmente se encuentra al final de la memoria no alocada.
+	- Cuando se ejecuta la syscall, se incrementa el break y el proceso puede acceder a cualquier memoria en la nueva área reservada, pero no accede a la memoria física.
 - malloc()
 	- Se implementa en espacio de usuario.
 	- Utiliza brk().
@@ -135,6 +135,39 @@ Consiste en dar la ilusión de la existencia de un único procesador para cualqu
 
 ![[Pasted image 20260325204600.png]]
 
+## Estructuras del kernel
 ### El Contexto
 - El **contexto** de un proceso **es la información necesaria para describir completamente el estado de un proceso**.
 - Cada proceso posee su propio contexto.
+
+¿Qué se necesita para describir "el estado de un proceso"?
+El contexto de un proceso comprende:
+- El contenido del address space (**memoria**)
+- El contenido de los registros de hardware (**cpu**)
+- Las estructuras de datos que pertenecen al kernel relacionadas con el proceso (**kernel**)
+
+> [!Info] El contexto de un proceso es la unión del contexto de estos tres componentes. Cada componente ve solo su contexto.
+
+
+#### Contexto user-level
+Consiste en las secciones que conforman el espacio de dirección virtual del proceso
+- Text
+- Data
+- Stack
+- Heap
+
+#### Contexto de registros
+Representa el estado del CPU, es decir, los registros del CPU
+- PCR
+- PSR
+- Stack Pointer Register
+- General Purpose Registers
+
+#### System-level context
+- **Process Table Entry**: La entrada en la **tabla de procesos**.
+	- Cada proceso esta representado por un Process Control Block.
+	- Contiene muchos elementos de información asociados.
+		![[Pasted image 20260517131700.png]]
+- **Configuración de memoria**: Define el mapeo de la memoria virtual vs memoria física del proceso.
+- **Kernel Stack**: Contiene los stack frames de las llamadas a funciones hechas dentro del kernel.
+- La **u area**: En desuso en sistemas modernos. Pero casi todo se incluye ahora en la Process Table Entry.

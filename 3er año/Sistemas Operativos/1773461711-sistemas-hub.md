@@ -4,6 +4,7 @@ aliases:
   - sistemas-hub
 tags:
   - sistemas
+color: var(--mk-color-turquoise)
 ---
 
 # sistemas-hub

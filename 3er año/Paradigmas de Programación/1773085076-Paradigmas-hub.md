@@ -4,11 +4,13 @@ aliases:
   - paradigmas-hub
 tags:
   - paradigmas
+color: var(--mk-color-turquoise)
 ---
 
 # paradigmas-hub
 
 ## [[1773076782-Introduccion|Introducción]]
+
 ## [[1773681613-abstraccion-encapsulamiento-herencia-y-polimorfismo|Abstracción, encapsulamiento, herencia y polimorfismo]]
 
 ## [[1774890197-principios-de-diseo|Principios de diseño]]
@@ -19,3 +21,6 @@ tags:
 
 ## [[1778091311-programacion-logica|Programación Lógica]]
 
+## [[1779749293-calculo-lambda.md|Calculo Lambda]]
+
+## [[1779835126-programacion-funcional|Programación Funcional]]

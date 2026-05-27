@@ -2,6 +2,7 @@
 tags:
   - tda
 aliases:
+color: var(--mk-color-turquoise)
 ---
 # tda-hub
 

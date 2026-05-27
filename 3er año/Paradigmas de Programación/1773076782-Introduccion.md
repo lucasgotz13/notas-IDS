@@ -36,23 +36,26 @@ Un sistema orientado a objetos se forma de un conjunto de objetos que interactua
 ### Estilos de OOP
 
 Una característica importante en los lenguajes orientados a objetos es la posibilidad de definir objetos con comportamiento similar. Existen dos variantes:
+
 - Basado en **clases**: Todo objeto es una **instancia** de una **clase** específica.
 - Basado en **Prototipos**: Todo objeto está asociado a otro (su **prototipo** o **padre**).
 
 ## Java
 
 Características:
+
 - De propósito general.
 - Multiparadigma, principalmente OOP.
 - Basado en clases.
 - Recolector de basura automático.
 - Tipado estático y fuerte.
 - Compilación a bytecode y ejecución en una máquina virtual (JVM).
-	- Portabilidad: "Write once, run anywhere"
-	- Windows, Linux, MacOS, Android, etc.
+  - Portabilidad: "Write once, run anywhere"
+  - Windows, Linux, MacOS, Android, etc.
 
 Se distribuye en dos paquetes:
-- JDK: *Java Development Kit*. Incluye herramientas de desarrollo y la JVM
+
+- JDK: _Java Development Kit_. Incluye herramientas de desarrollo y la JVM
 - JRE: Java Runtime Environment. Incluye la JVM y las bibliotecas estándar.
 
 ### Definiciones
@@ -71,29 +74,32 @@ Se distribuye en dos paquetes:
 
 - El código se organiza en **paquetes** (carpetas) y **clases** (usualmente un archivo `.java` por cada clase).
 - Guía de estilo
-	- Clases: PascalCase
-	- Variables, atributos y métodos: camelCase
-	- Constantes: UPPER_CASE
+  - Clases: PascalCase
+  - Variables, atributos y métodos: camelCase
+  - Constantes: UPPER_CASE
 - Crear una instancia de una clase: `new Clase(...)`
 - Acceder a un atributo, invocar un método: `instancia.atributo`, `instancia.metodo(...)`
-- En un objeto mutable, es recomendable calificar sus atributos como `private`, para evitar que puedan ser manipulados desde fuera de la clase, y opcionalmente definir **métodos de acceso** (*getters* y *setters*) públicos.
+- En un objeto mutable, es recomendable calificar sus atributos como `private`, para evitar que puedan ser manipulados desde fuera de la clase, y opcionalmente definir **métodos de acceso** (_getters_ y _setters_) públicos.
 - El modificador `final` indica que una variable o atributo es inmutable.
 - El modificador `static` indica que un atributo o método pertenece a la clase en sí, y no a una instancia específica.
 
 ## UML
 
-*Unified Modeling Language*: Proporciona una forma estándar de visualizar el diseño de un sistema.
+_Unified Modeling Language_: Proporciona una forma estándar de visualizar el diseño de un sistema.
+
 ### Diagrama de clases
 
 ![[Pasted image 20260309162728.png]]
 Estos diagramas nos permiten visualizar rápidamente como es el diseño del sistema sin tener que analizar el código.
 
 #### ¿Cómo se lee?
+
 - Cada clase se dibuja en un recuadro rectangular.
 - Se pone el nombre de la clase como encabezado.
 - Se pone primeros los atributos y luego los métodos.
-- Si un atributo es de tipo objeto (como se ve en el diagrama con "juego"), se pone una flecha indicando de donde viene ese tipo. 
+- Si un atributo es de tipo objeto (como se ve en el diagrama con "juego"), se pone una flecha indicando de donde viene ese tipo.
 - Luego, la clase Juego depende de la clase Resultado.
+
 ### Relaciones entre clases
 
 ![[Pasted image 20260309163444.png]]
@@ -109,19 +115,20 @@ Muestra los actores del sistema, una linea de tiempo, los mensajes que se van ma
 ## Tipos de datos
 
 **Dos categorías**:
+
 - **Primitivos**: int, double, boolean, char, etc. (valor por defecto: 0)
-	- No son objetos
-- **Referencias**: Apuntan a un objeto en memoria (ej: Punto, valor por defecto: null)
-	- Los objetos se manejan por referencia.
-**Arreglos**:
+  - No son objetos
+- **Referencias**: Apuntan a un objeto en memoria (ej: Punto, valor por defecto: null) - Los objetos se manejan por referencia.
+  **Arreglos**:
 - Declaración: `int[] numeros;`
 - Inicialización: `numeros = new int[10]; int[] numeros = {1,2,3}`
 - Acceso: `numeros[0]` `numeros.length`
 - El tamaño de un arreglo es fijo una vez creado.
-**Strings**:
+  **Strings**:
 - Son instancias de la clase `String`
 - `"...` es azúcar sintáctica para new String(...)
 - Inmutables
-**Colecciones dinámicas**:
+  **Colecciones dinámicas**:
 - Clases disponibles en la biblioteca estándar
 - ArrayList, HashSet, HashMap, etc.
+

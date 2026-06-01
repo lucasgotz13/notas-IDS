@@ -29,3 +29,5 @@ color: var(--mk-color-turquoise)
 ## [[1778191360-redes-de-flujo-y-algoritmo-de-ford-fulkerson|Redes de Flujo y Algoritmo de Ford-Fulkerson]]
 
 ## [[1779914281-reducciones-y-clases-de-complejidad|Reducciones y Clases de Complejidad]]
+
+## [[1780335399-algoritmos-de-aproximacion|Algoritmos de Aproximacion]]

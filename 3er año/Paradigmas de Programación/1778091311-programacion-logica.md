@@ -72,7 +72,7 @@ La **consulta** se escribe como `?- t.` donde t es un término.
 Disponemos de una gran cantidad de predicados predefinidos, por ejemplo:
 `true` / `false` (`fail`): Siempre evalúan a verdadero o falso, respectivamente.
 `A, B`: Verdadero si `A` y `B` son ambos verdaderos (and).
-`A, B`: Verdadero si `A` o `B` (o ambos) son verdaderos (or).
+`A; B`: Verdadero si `A` o `B` (o ambos) son verdaderos (or).
 `X == Y`: Verdadero si `X` e `Y` son términos idénticos.
 `X \== Y`: Verdadero si `X` e `Y` no son términos idénticos.
 `X = Y`: **Unifica** `X` e `Y` (falso si no son unificables).
@@ -84,7 +84,7 @@ Dos términos **unifican** si pueden representar la misma estructura. Si alguno 
 
 Ejemplos:
 - padre(homero, bart) unifica con padre(homero, bart).
-- padre(homero, bart) no unifica con padre(homero, lista).
+- padre(homero, bart) no unifica con padre(homero, lisa).
 - padre(homero, X) unifica con padre(homero, bart) instanciando `X = bart`.
 - padre(P, X) unifica con padre(homero, bart) instanciando `P = homero`, `X = bart`.
 - 2 + 3 no unifica con 5.
@@ -161,5 +161,5 @@ longitud([_|T], L) :- longitud(T, L1), L is L1 + 1.
 Algunos predicados predefinidos para operar con listas:
 - `member(X, L)`: Verdadero si X es un elemento de la lista `L`.
 - `append(L1, L2, L3)`: Verdadero si `L3` es la concatenación de `L1` y `L2`
-- `reverse(L, R)`: Verdadero si `R` es la lista `L` invertida
+- `reverse(L, R)`: Verdadero si `R` es la lista `L` invertida.
 - `permutation(L1, L2)`: Verdadero si `L2` es una permutación de `L1`.

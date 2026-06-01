@@ -1,12 +1,15 @@
 ---
+id: tda-hub
+aliases: []
 tags:
   - tda
-aliases:
 color: var(--mk-color-turquoise)
 ---
+
 # tda-hub
 
 ## [[1773352124-Induccion-Matematica|Induccion Matematica]]
+
 ## [[1773353269-D&Q-avanzada|D&Q avanzada]]
 
 ## [[1773698555-algoritmos-greedy-1|Algoritmos Greedy 1]]
@@ -24,3 +27,5 @@ color: var(--mk-color-turquoise)
 ## [[1778178854-programacion-lineal-ii|Programacion Lineal II]]
 
 ## [[1778191360-redes-de-flujo-y-algoritmo-de-ford-fulkerson|Redes de Flujo y Algoritmo de Ford-Fulkerson]]
+
+## [[1779914281-reducciones-y-clases-de-complejidad|Reducciones y Clases de Complejidad]]

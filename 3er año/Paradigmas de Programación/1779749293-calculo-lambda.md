@@ -45,7 +45,7 @@ Consiste en escribir **expresiones lambda** con una sintaxis formal, y aplicar *
 > [!info] Una **expresión lambda** puede ser:
 >
 > - Una **variable**.
-> - Una **abstracción**: ($\lambda$x.M) donde M es una expresión lambda.
+> - Una **abstracción**: (λx.M) donde M es una expresión lambda.
 > - Una **aplicación**: (M N) donde M y N son expresiones lambda.
 
 Ejemplo: `(((λx.(x y)) (λy.(y y))) z)`
@@ -112,7 +112,7 @@ Entre las estrategias más comunes están:
 
 - Si la expresión tiene forma normal, esta estrategia la encuentra.
 
-**Orden aplicativo**: Siempre se reduce la beta-redex mas **interna** y a la izquieda.
+**Orden aplicativo**: Siempre se reduce la beta-redex mas **interna** y a la izquierda.
 
 - Esta estrategia puede no terminar, incluso si la expresión tiene forma normal.
 

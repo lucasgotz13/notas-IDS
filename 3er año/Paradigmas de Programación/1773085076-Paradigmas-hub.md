@@ -24,3 +24,6 @@ color: var(--mk-color-turquoise)
 ## [[1779749293-calculo-lambda.md|Calculo Lambda]]
 
 ## [[1779835126-programacion-funcional|Programación Funcional]]
+
+## [[1779912949-programacion-concurrente|Programacion Concurrente]]
+
